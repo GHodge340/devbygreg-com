@@ -1,0 +1,11 @@
+{
+  "name": "fbpagemanager",
+  "version": "1.0.0",
+  "description": "FACEBOOK PAGE AUTOPOSTING APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Greg Hodge",
+  "license": "ISC"
+}
