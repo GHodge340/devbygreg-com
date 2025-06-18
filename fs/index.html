@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Forever Flowers - Demo WebSite</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!--ADDITIONAL STYLING-->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .oBox {
+        background-color: orange;
+        width: 100vw;
+        height: 150px;
+        color: white;
+      }
+
+      .bBox {
+        background-color: #212529;
+        width: 100vw;
+        height: 25px;  
+      }
+
+      .oborder{
+        border: 5px solid orange;
+      }
+
+      .bgimage1{
+    background: url(./assets/flower1.jpg);
+    background-size: cover;   
+  }
+
+  .bgimage2{
+    background: url(./assets/flower2.jpg);
+    background-size: cover;   
+  }
+
+  .bgimage3{
+    background: url(./assets/flower3.jpg);
+    background-size: cover;   
+  }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./node_modules/bootstrap/Carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--NAVIGATION BAR -->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <img src="./assets/logo.png" height="60">
+        <!--
+      <a class="navbar-brand" href="#">Forever Flowers</a>
+      -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature">Featured Flower</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!--
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        -->
+      </div>
+    </div>
+  </nav>
+</header>
+<!--CAROUSEL SECTION -->
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">  
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    
+        <div class="carousel-item bgimage1 active">
+        
+        <!--
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        -->
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Forever Flowers.</h1>
+            <p>Your number one demo site for flowers Designed by @GTheCodeGuy.</p>
+            <p><a class="btn btn-lg btn-primary" href="#contact">Message Us</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item bgimage2">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Wake Up And Smell the Flowers.</h1>
+            <p>We collect the best exotic and popular flowers for your enjoyment!</p>
+            <p><a class="btn btn-lg btn-primary" href="#about">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item bgimage3">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Flowers For All Occasions</h1>
+            <p>If you need information on any flower, we have it right here. </p>
+            <p><a class="btn btn-lg btn-primary" href="#product">Browse gallery</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    -->
+   
+    <div class="oBox">
+        <Container>
+            <Row>
+                <br>
+                <h2 class="centerImage"> "We are your Flower Professionals, Now and Forever!"</h2>
+                <h3 class="centerImage">Message Us For Your Free Flower Today!</h1>  
+            </Row>
+        </Container>
+    </div>
+    <div class="bBox">
+      <Container>
+          <Row>
+              
+          </Row>
+      </Container>
+  </div>
+  </div>
+
+
+    <!-- FEATURED SECTION-->
+
+    
+    <div class="centerImage" id="feature">
+    <div class="row featurette">
+        <div class="col-md-7"><br><br><br><br>
+            <img src="./assets/logo.png" height="60">
+            <h1 class=centerImage>Flower of The Month</h1>
+            <h2 class="featurette-heading">April Featured Flower. <span class="text-muted">The Rose.</span></h2>
+            <p class="lead">A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and tens of thousands of cultivars. They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.</p>
+        </div>
+        <div class="col-md-5"><br><br><br><br>
+            <img class="oborder" src="./assets/rose500.jpg" width="350" alt="Flower Pic"  width="80">   
+        </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="centerImage">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">May Featured Flower. <span class="text-muted">The Sunburst.</span></h2>
+        <p class="lead">Amaryllis is the only genus in the subtribe Amaryllidinae. It is a small genus of flowering bulbs, with two species. The better known of the two, Amaryllis belladonna, is a native of the Western Cape region of South Africa, particularly the rocky southwest area between the Olifants River Valley and Knysna.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="oborder" src="./assets/rose5002.jpg"  width="350" alt="Flower Pic"  width="80">
+
+      </div>
+    </div>
+</div>
+    <hr class="featurette-divider">
+    <div class="centerImage">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">June Featured Flower <span class="text-muted">The Sunflower</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="oborder" src="./assets/rose5003.jpg"  width="350" alt="Flower Pic"  width="80">
+
+      </div>
+    </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+<!-- ABOUT US SECTION -->
+<!--HEADLINE 4 -->  
+<div class="centerImage">
+<div class="container headline" id="about">
+    <div class="row">
+      <div class="col"><br><br><br><br>
+        <h1>ABOUT US</h1><br>
+      </div>
+    </div>
+  </div>
+  <!--FEATURE SECTION-->
+  <div class="row featurette">
+    <div class="col-md-5 order-md-1">
+      <img src="./assets/flower7.jpg" width="350" class="img-fluid oborder">
+    </div>
+    <div class="col-md-7 order-md-2">
+      <h2>Forever Flowers</h2>
+      <p class="lead"><em>"Your online solution for flowers!"</em> <br> There's no better place to order flowers online than Forever Flowers.com. Whether you're looking to buy flowers and gifts like roses, orchids, gift baskets, bonsai trees, flowering plants or wedding bouquets, we have the highest quality blooms and the most talented florists who can create exactly what you order. Dazzle and delight your loved ones wherever they may be with truly original flowers and gifts from ForeverFlowers.com.</p>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+  </div><!-- /.container -->
+</div>
+    <div class="centerImage">
+  <!--HEADLINE 2 --> 
+  <div class="container headline" id="product">
+    <div class="row">
+      <div class="col"><br><br><br><br>
+        <h1>GALLERY</h1><br>
+        <p>Here's a few pics of the most requested flowers made to ForeverFlowers.com.</p>
+      </div>
+    </div>
+  </div>  
+<!--IMAGE/PRODUCT GALLERY SECTION -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./assets/card1.jpg" height="250" alt=""  class="img-thumbnail">
+        <h3>Blue SunFlower</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, cumque officia. Mollitia, ipsam. Natus numquam rem incidunt aliquam ab quibusdam!
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/card2.jpg" height="250" alt=""  class="img-thumbnail">
+        <h3>Pink Passion</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor soluta ipsam consequatur ex eligendi quam distinctio, expedita doloribus modi?
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/card3.jpg" height="250" alt=""  class="img-thumbnail">
+        <h3>Angelic Lilly</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto optio maiores veritatis et, adipisci cumque cum quia totam numquam alias.   </p>
+      </div>
+    </div>
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./assets/card4.jpg" height="250" alt=""  class="img-thumbnail"></a>
+        <h3>SunFlower</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus sed perferendis ex dolorum itaque omnis similique impedit soluta esse ad. </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/card5.jpg" height="250" alt=""  class="img-thumbnail"></a>
+        <h3>Tulip Mania</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam neque qui ducimus iure error atque quibusdam? Eos error eaque in?</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/card6.jpg " height="250" alt=""  class="img-thumbnail">
+        <h3>Rose</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa, eum reiciendis reprehenderit illo excepturi laudantium quasi exercitationem fugit cumque. </p>
+      </div>
+    </div>
+  <hr>
+</div>
+  <!--HEADLINE 4 -->  
+  <div class="centerImage">
+  <div class="container headline" id="contact">
+    <div class="row">
+      <div class="col">
+        <h1>CONTACT US</h1><br>
+        <p>Got Questions? Tell us what's on your mind.</p>
+      </div>
+    </div>
+    
+  </div>
+<!--COMMENT BOX FORM -->
+  <form>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom01">Name</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom02">Email</label>
+        <input type="email" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1"> Leave a message and we will get in contact with you as soon as possible</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Send Message</button>
+  </form> <hr>
+</div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Forever Flowers Company, Inc. &middot; <a href="http://www.GHodgewebdev.site">Designed By: Gregory Hodge</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
