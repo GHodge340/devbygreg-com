@@ -217,7 +217,7 @@ h3 {
 /* Apply this style for screens with a maximum width of 768px (portrait mobile) */
 @media only screen and (max-width: 768px) {
 	#hero {
-	  background-image: url('./img/mobile-bg2.png');
+	  background-image: url('./img/mobile-bg3.png');
 	}
 }
 
