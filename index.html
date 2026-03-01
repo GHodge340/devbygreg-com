@@ -3,281 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gregory Hodge | Full-Stack Developer & Designer</title>
   <link rel="stylesheet" href="style.css">
-  <title>Gregory Hodge - Web & Mobile Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero"><h1><span>G</span>regory <span>H</span>odge</h1></a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#interests" data-after="Skills">Skills</a></li>
-            <li><a href="#projects" data-after="Portfolio">Portfolio</a></li> 
-          
-            <!-- <li><a href="#services" data-after="Service">Services</a></li>
-            -->
-           
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">GREGORY HODGE<span class="text-accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html" class="text-accent">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tagline">DEVBYGREG.COM // Available for collaborations</span>
+        <h1>Building <span class="text-accent">digital experiences</span> that matter.</h1>
+        <p>I'm Gregory Hodge, a Full-Stack Developer specializing in high-performance web applications and AI-driven solutions.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Header -->
 
+  <!-- Projects Section (Bento Grid) -->
+  <section id="projects" class="section container">
+    <div class="section-header">
+      <h2>Selected Projects</h2>
+      <p class="text-secondary">A glimpse into my recent work in React, AI, and Full-Stack development.</p>
+    </div>
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1 style="color: black;">Hello <span></span></h1>
-        <h1 style="color: black;">I am <span></span></h1>
-        <h1>Gregory <span></span></h1><br>
-        <h3>Front & Backend Developer</h3>
-        <a href="#projects" target="blank" type="button" class="cta">Portfolio</a>
-      </div>
+    <div class="projects-grid">
+      <!-- AppleCrates (Featured) -->
+      <a href="https://applecrates.vercel.app/" target="_blank" class="project-card reveal" style="grid-column: span 12;">
+        <div class="project-bg" style="background-image: url('bckg/apple_bg.png');"></div>
+        <div class="project-logo-wrapper">
+          <img src="dev_logos/logo.png" alt="AppleCrates Logo">
+        </div>
+        <div class="project-info">
+          <h3>AppleCrates</h3>
+          <p>A desktop application designed for DJs and music collectors to bridge the gap between Apple Music and local hardware. It allows users to browse their Apple Music playlists and "mirror" those structures onto their local drive by intelligently scanning, locating, and duplicating audio files into organized "crates."</p>
+          <p style="margin-top: 10px; font-size: 0.85rem; color: var(--accent-color);"><strong>Tech Stack:</strong> Electron, React, Node.js, File System API (fs), IPC Communication</p>
+          <div class="project-tags">
+            <span class="tag">Desktop App</span>
+            <span class="tag">React</span>
+            <span class="tag">Systems Integration</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- DJ Avalanche -->
+      <a href="https://www.djavalanche.com" target="_blank" class="project-card reveal" style="grid-column: span 6;">
+        <div class="project-bg" style="background-image: url('bckg/dj_bg.png');"></div>
+        <div class="project-logo-wrapper">
+          <img src="dev_logos/Dj Avalanche - white Logo 2022 (2).png" alt="DJ Avalanche Logo">
+        </div>
+        <div class="project-info">
+          <h3>DJ Avalanche</h3>
+          <p>A modern, responsive platform built using advanced CMS architectures, leveraging dynamic content collections and integrated business tools to deliver a scalable, high-performance experience.</p>
+          <div class="project-tags">
+            <span class="tag">CMS Architecture</span>
+            <span class="tag">Dynamic Content</span>
+            <span class="tag">UX Design</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- DBG Stock Picks -->
+      <a href="https://dbg-stock-picks.vercel.app/" target="_blank" class="project-card reveal" style="grid-column: span 6;">
+        <div class="project-bg" style="background-image: url('bckg/trade_bg.png');"></div>
+        <div class="project-logo-wrapper">
+          <img src="dev_logos/DBG Trader Logo.png" alt="DBG Stock Picks Logo">
+        </div>
+        <div class="project-info">
+          <h3>DBG Stock Picks</h3>
+          <p>A high-performance web dashboard providing real-time tracking of market movements and high-conviction stock picks, featuring a data-dense interface optimized for rapid decision-making.</p>
+          <p style="margin-top: 10px; font-size: 0.85rem; color: var(--accent-color);"><strong>Tech Stack:</strong> Next.js 15, React, Tailwind CSS, RESTful API Integration</p>
+          <div class="project-tags">
+            <span class="tag">Next.js 15</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Real-time Data</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- DGH Radio Service -->
+      <a href="https://radio.dghservices.com/" target="_blank" class="project-card reveal" style="grid-column: span 12;">
+        <div class="project-bg" style="background-image: url('bckg/radio_bg.png');"></div>
+        <div class="project-logo-wrapper">
+          <i data-lucide="radio" style="width: 80px; height: 80px;"></i>
+        </div>
+        <div class="project-info">
+          <h3>DGH Radio Service</h3>
+          <p>An AI-powered news stream that scrapes, rewrites, and broadcasts Caribbean news autonomously.</p>
+          <div class="project-tags">
+            <span class="tag">AI / NLP</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
-  <!-- End Hero Section  -->
-
-  <!-- Service Section 
-  
-    <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  End Service Section -->
-
-  <!-- Projects Section -->
-  
-    <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Project <span>Samples</span></h1>
-       <!-- <P style="font-size: large;">Here are a few sample projects showcasing my design and web application skills.</P><br> --> 
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <a href="https://www.djavalanche.com" target="blank">  
-            <h1>Artist/Band Page</h1>
-            <h2>DJ Avalanche</h2>
-            <p>This is a live responsive reactjs based website designed for a popular DJ features a video landing page, social media links, Audio video links and an info section perfect for entertainers. </p> <p>>>>CLICK HERE TO SEE PAGE...</p> </a>
-          </div>
-          <div class="project-img">
-          <img src="img/img-4.png" alt="dj website img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <a href="./acm/index.html" target="blank"> 
-            <h1>Media Business Page</h1>
-            <h2>Avalanche Media</h2> <!--Insert Link For Project-->
-            <p>This is a demo reactjs and bootstrap responsive business landing page designed for a small business that features a mailing list subscription, video display and pricing cards.</p> <p>>>>CLICK HERE TO SEE PAGE...</p> 
-          </div></a>
-          <div class="project-img">
-            <img src="img/img-7.png" alt="business site img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <a href="https://radio.dghservices.com/" target="blank"> <!--Insert Link For Project-->
-            <h1>AI Powered News Stream</h1>
-            <h2>DGH Radio Service</h2>
-            <p>This is an AI powered news stream that scrapes real Caribbean news reports, rewrites them and creates a broadcast completely by AI.  Although the front-end is minimal a lot was done in the back-end to make this fully automated AI News Radio App.</p> <p>>>>CLICK HERE TO SEE APP...</p> 
-          </div></a>
-          <div class="project-img">
-            <img src="img/img-9.png" alt="dgh radio service img">
-          </div>
-        </div>
-        <!--
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </section>
-
- <!-- End Projects Section -->
 
   <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="img/img-4.jpeg" alt="img">
+  <section id="about" class="section container">
+    <div class="about-content reveal">
+      <div class="about-img-wrapper">
+        <img src="img/img-4.jpeg" alt="Gregory Hodge" class="about-img">
+      </div>
+      <div class="about-text">
+        <span class="hero-tagline">Background</span>
+        <h2>10+ Years of Crafting Media & Software</h2>
+        <p>Based in Charlotte, NC, I bridge the gap between creative design and robust technical implementation. My journey from media production to full-stack development gives me a unique perspective on user experience.</p>
+        
+        <div class="skills-list">
+          <div class="skill-item">
+            <h4>Development</h4>
+            <p>React, Next.js, Node.js, JavaScript (ES6+), AWS, Python.</p>
+          </div>
+          <div class="skill-item">
+            <h4>Design</h4>
+            <p>Figma, Photoshop, Illustrator, UI/UX Prototyping.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem;">
+          <a href="img/Certs.pdf" target="_blank" class="btn btn-outline">View Certifications</a>
         </div>
       </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <ul>
-            <!--
-             <li>
-              <strong>Birthplace:</strong> St. Thomas, US Virgin Islands
-          </li>
-            -->
-          <li>
-              <strong>Current Residence:</strong> Charlotte, North Carolina
-          </li>
-          <li>
-              <strong>Twitter: </strong> <a href="https://https://twitter.com/GTheCodeGuy" target="_blank">@GTheCodeGuy</a>
-          </li>
-          <li>
-            <strong>Email: </strong> <a href="mailto:GHodge.vi@gmail.com?Subject=Hello%20again" target="_top">GHodge.vi@gmail.com</a>
-        </li>
-      </ul>
-      <p style="font-size: large;"><br>
-        I am a certified mobile and web developer based in Charlotte, NC, specializing in web development and responsive design. My training at NuCamp equipped me with a strong foundation in modern technologies, including JavaScript (ES6+), HTML5, CSS3, React, and Node.js. I have hands-on experience developing and maintaining client-side web applications, as well as building mobile and full-stack solutions.
-
-        I am passionate about designing, developing, and implementing effective web applications. Whether the task involves front-end or back-end development, problem-solving, or collaborative coding, I am ready to contribute. My technical skills, strong work ethic, and commitment to continuous learning make me a valuable addition to your team. My certifications are attached below. Please feel free to contact me for any opportunities or collaborations. I look forward to hearing from you! 
-      </p>
-      <!--
-        <p style="font-size: large;"><br>Hi! My name is Gregory. I am a Frontend, Backend, Mobile and Web Developer from the Caribbean (US Virgin Islands) that has a passion for coding and design. I've attended the University of the Virgin Islands & NuCamp Coding Academy. Professionally I have over 10 years working experience in the Communications, Designs, Media and Marketing fields.   I'm a great team worker that can be an incredible asset to your company.  I have attached my certifications below.
-        </p>
-        __-->
-        <a href="img/Certs.pdf" target="blank" class="cta">CERTIFICATIONS</a>
-        <!--Old link: html-css-Javascript Cert:  http://www.ghodgewebdev.site/docs/Nucamp-Certificate.png-->
-      </div>
     </div>
   </section>
-  <!-- End About Section -->
-
-   <!-- Interest Section -->
-   <section id="interests">
-    <div class="about container">
-      <div class="col-left">
-        
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">SKILLS <span></span></h1>
-        <ul>
-          <li style="font-size: large;">
-              Experienced in development technologies such as HTML, CSS, SCSS, BOOTSTRAP, GIT, API's, JavaScript, AWS, NODE JS, REACT & NEXT JS.
-          </li><br>
-          <li style="font-size: large;">
-              Experienced with graphic design and UX/UI applications such as Adobe Photoshop, Adobe Illustrator, GIMP, Figma, etc..
-          </li><br>
-          <li style="font-size: large;">
-              10+ years experience in Marketing, Media Production, Web and Mobile Development
-          </li><br>
-          <li style="font-size: large;">
-              Possess management and productivity skills from previous projects and positions.
-          </li>
-      </ul>
-      <a href="docs/GDHResume2025.pdf" target="blank" class="cta">RESUME</a>
-  
-      </div>
-    </div>
-  </section>
-  <!-- End Interest Section -->
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Text Line</h1>
-            <h2>704 608 6541</h2>
-            
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>GHodge.vi@gmail.com</h2>
-            
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Charlotte, North Carolina</h2>
-          </div>
+  <section id="contact" class="section container">
+    <div class="contact-card reveal">
+      <span class="hero-tagline">Get in touch</span>
+      <h2>Let's start a project.</h2>
+      <p class="text-secondary">I'm currently available for freelance work and full-time opportunities.</p>
+      
+      <div class="contact-grid">
+        <a href="mailto:GHodge.vi@gmail.com" class="contact-method">
+          <i data-lucide="mail"></i>
+          <strong>Email</strong>
+          <span>GHodge.vi@gmail.com</span>
+        </a>
+        <a href="tel:7046086541" class="contact-method">
+          <i data-lucide="phone"></i>
+          <strong>Call/Text</strong>
+          <span>+1 (704) 608-6541</span>
+        </a>
+        <div class="contact-method">
+          <i data-lucide="map-pin"></i>
+          <strong>Location</strong>
+          <span>Charlotte, NC</span>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Contact Section -->
 
   <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>G</span>regory <span>H</span>odge</h1></div>
-      <h2>Front & Backend Developer</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/greg.hodge.395"><img src="img/fbicon.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/gregory-hodge-dev/"><img src="img/linkinicon.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="http://www.twitter.com/GTheCodeGuy"><img src="img/twittericon.png"/></a>
-        </div>
-      
+  <footer>
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/gregory-hodge-dev/" target="_blank"><i data-lucide="linkedin"></i></a>
+        <a href="http://www.twitter.com/GTheCodeGuy" target="_blank"><i data-lucide="twitter"></i></a>
+        <a href="https://www.facebook.com/greg.hodge.395" target="_blank"><i data-lucide="facebook"></i></a>
       </div>
-      <p>Copyright © 2020 Gregory Hodge. All rights reserved</p>
+      <p class="text-secondary" style="font-size: 0.8rem;">&copy; 2026 Gregory Hodge. All rights reserved.</p>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Scroll Reveal Animation
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Gregory Hodge - Full-Stack Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .resume-container {
+      max-width: 900px;
+      margin: 10rem auto;
+      padding: 4rem;
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 32px;
+      backdrop-filter: blur(var(--glass-blur));
+    }
+
+    .resume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 3rem;
+    }
+
+    .resume-header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-section {
+      margin-bottom: 4rem;
+    }
+
+    .resume-section h2 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-color);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .experience-item {
+      margin-bottom: 2.5rem;
+    }
+
+    .experience-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .experience-item .date {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .resume-list {
+      list-style: none;
+    }
+
+    .resume-list li {
+      margin-bottom: 0.75rem;
+      color: var(--text-secondary);
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .resume-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+    }
+
+    .skills-tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill-tag {
+      padding: 0.5rem 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    @media (max-width: 768px) {
+      .resume-container { padding: 2rem; margin: 6rem 1rem; }
+      .resume-header { flex-direction: column; gap: 2rem; }
+      .resume-grid { grid-template-columns: 1fr; }
+      .resume-header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="index_new.html" class="logo">GREGORY HODGE<span class="text-accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index_new.html#projects">Work</a></li>
+        <li><a href="index_new.html#about">About</a></li>
+        <li><a href="index_new.html#contact">Contact</a></li>
+        <li><a href="#" class="text-accent">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="resume-container reveal active">
+    <header class="resume-header">
+      <div>
+        <h1>Gregory Hodge</h1>
+        <p class="text-secondary">DEVBYGREG.COM // Full-Stack Engineer</p>
+      </div>
+      <a href="resumes/GH_new.pdf" download class="btn btn-primary">
+        <i data-lucide="download" style="width: 18px; height: 18px; margin-right: 8px;"></i> Download PDF
+      </a>
+    </header>
+
+    <div class="resume-grid">
+      <div class="left-col">
+        <section class="resume-section">
+          <h2>Core Engineering</h2>
+          <div class="skills-tag-cloud">
+            <span class="skill-tag">Next.js 15</span>
+            <span class="skill-tag">React (ES6+)</span>
+            <span class="skill-tag">Electron</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python / FastAPI</span>
+            <span class="skill-tag">AWS Cloud</span>
+            <span class="skill-tag">IPC Communication</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">Git Architecture</span>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Design & Strategy</h2>
+          <div class="skills-tag-cloud">
+            <span class="skill-tag">UI/UX Prototyping</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe Creative Suite</span>
+            <span class="skill-tag">CMS Architecture</span>
+            <span class="skill-tag">Digital Marketing</span>
+            <span class="skill-tag">Media Production</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="right-col">
+        <section class="resume-section">
+          <h2>Key Projects</h2>
+          
+          <div class="experience-item">
+            <h3>AppleCrates</h3>
+            <span class="date">Lead Engineer | 2026</span>
+            <ul class="resume-list">
+              <li>Engineered a desktop-native solution using Electron and Node.js for automated local hardware mirroring.</li>
+              <li>Implemented high-volume File System automation with zero-data-loss integrity checks.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <h3>DBG Stock Picks</h3>
+            <span class="date">Full-Stack Developer | 2026</span>
+            <ul class="resume-list">
+              <li>Built a real-time financial dashboard using Next.js 15 and SSR/ISR for low-latency market updates.</li>
+              <li>Optimized data fetching and polling mechanisms to ensure real-time accuracy.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <h3>DGH Radio Service</h3>
+            <span class="date">Systems Architect | 2025</span>
+            <ul class="resume-list">
+              <li>Developed an AI-powered automation pipeline for autonomous news scraping and broadcasting.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <h3>Digital Media Strategy</h3>
+            <span class="date">Professional Expert | 10+ Years</span>
+            <ul class="resume-list">
+              <li>Bridged the gap between creative design and technical implementation for high-profile clients.</li>
+              <li>Specialized in scalable CMS architectures and high-performance business web solutions.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="text-secondary" style="font-size: 0.8rem;">&copy; 2026 Gregory Hodge. Built with code and care.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
